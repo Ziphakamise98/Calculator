@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<htm >
+    <head>
+        <meta name="viewport" conten="width=device, initialscale-1.0">
+        <link rel="stylesheet" href="CalStyle.css">
+        <title>Simple Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="calc">
+                <form><strong>ZIP-CALCULATOR</strong></br>
+                    <div class="display">
+                        
+                        <input type="text" name="dispay">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="dispay.value=' '">
+                        <input type="button" value="DE" onclick="dispay.value=dispay.value.toString().slice(0,-1)">
+                        <input type="button" value=".00" onclick="dispay.value+='.00'">
+                        <input type="button" value="/" onclick="dispay.value+='/'">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="dispay.value+='7'">
+                        <input type="button" value="8" onclick="dispay.value+='8'">
+                        <input type="button" value="9" onclick="dispay.value+='9'">
+                        <input type="button" value="x" onclick="dispay.value+='*'" >
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="dispay.value+='4'">
+                        <input type="button" value="5" onclick="dispay.value+='5'">
+                        <input type="button" value="6" onclick="dispay.value+='6'">
+                        <input type="button" value="-" onclick="dispay.value+='-'">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="dispay.value+='1'">
+                        <input type="button" value="2" onclick="dispay.value+='2'">
+                        <input type="button" value="3" onclick="dispay.value+='3'">
+                        <input type="button" value="+" onclick="dispay.value+='+'">
+                    </div>
+                    <div>
+                        <input type="button" value="0" onclick="dispay.value+='0'">
+                        <input type="button" value="." onclick="dispay.value+='.'">
+                        <input type="button" value="=" class="equal" onclick="dispay.value=eval(dispay.value)">
+                        
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </body>
+</htm>
